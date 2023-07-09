@@ -1,0 +1,14 @@
+:root {
+    --dark: #164d62;
+    --light: #e5e7d9;
+}
+
+* { 
+    background-color: var(--light);
+}
+
+.my_name {
+    color: var(--dark);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 20%;
+}
