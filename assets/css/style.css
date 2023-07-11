@@ -1,3 +1,4 @@
+/* Establishes variables to change multiple aspects of css code at once*/
 :root {
     --medium: #296d9d;
     --light:#f4e1d2;
@@ -7,23 +8,26 @@
     --general: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-
+/* Sets the background color to the variable "light"*/
 * { 
     background-color: var(--light);
 }
 
+/* Sets the font, color, and weight of my name on the page*/
 .my_name {
     color: var(--dark);
     font-family: var(--important);
     font-weight: bolder;
 }
 
+/* Sets all hyperlinks in the nav bar to invert colors, so they have a dark rounded background and light text, when you hover over them*/
 nav a:hover{
     background-color: var(--dark);
     color: var(--light);
     border-radius: 20px;
 }
 
+/* Sets the background of the nav bar to be transparent, and to act as flex box oriented at the right side of the page*/
 .nav-bar {
     background-color: #11ffee00;
     padding: 20px 20px;
@@ -34,6 +38,7 @@ nav a:hover{
     
 }
 
+/* Sets any headers in the nav bar to have the "important" font family, and to be locked to the left side of the screen */
 .nav-bar h1 {
     font-family: var(--important);
     text-align: center;
@@ -45,6 +50,7 @@ nav a:hover{
 
 }
 
+/* Sets the color, location, and size, of any hyperlinks in the nav bar, when left alone on the page.*/
 .nav-bar a {
     display: flex;
     color: var(--dark);
@@ -55,10 +61,12 @@ nav a:hover{
     font-size: 3rem;
 }
 
+/* Sets the body so it only takes up 97% of the screen*/
 body {
     width: 97%;
 }
 
+/* Sets the size, color, font, and margin, of any h2 elements */
 h2 {
     font-size: 3rem;
     font-family: var(--important);
@@ -67,11 +75,7 @@ h2 {
     color: var(--medium);
 }
 
-#headline {
-    font-size: 70px;
-    width: 10%;
-}
-
+/* Sets the position of the logo on the top of the page*/
 .image-box {
     display: flex;
     width: 100%;
@@ -80,11 +84,13 @@ h2 {
     align-items: center;
 }
 
+/* Creates a border around the image of the logo*/
 #icon {
     border-radius: 75px;
     margin: 10px;
 }
 
+/* Sets the color, width, and positioning of all horizontal lines on the page */
 hr {
     position: relative;
     border: none;
@@ -94,6 +100,7 @@ hr {
     margin: 0 auto 0 auto;
 }
 
+/* Sets the appearance of the bio in the About Me section*/
 .my-bio {
     font-size: 25px;
     margin-left: 3rem;
@@ -101,24 +108,28 @@ hr {
     font-family: var(--general);
 }
 
+/* Sets each row of projects in the My Work Section as an evenly spaced centered flex box*/
 .row {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin: 15px;
-  }
+}
 
+/* Sets the margin and width of each project card*/
 .card {
     margin: 15px;
     width: 75%;
 }
 
+/* Creates a margin around each project image, and makes the images rounded*/
 .cardImage {
     margin: 15px;
     width: 100%;
     border-radius: 20px;
 }
 
+/* Sets the appearance and alignment of each project header on the page*/
 header {
     text-align: center;
     font-family: var(--general);
@@ -127,10 +138,12 @@ header {
     font-weight: bold;
 }
 
+/* Removes any text decoration from the hyperlinks above each project card*/
 .card a{
     text-decoration: none;
 }
 
+/* Sets the background color, posiiton, and appearance of contact methods in the Contact Me section*/
 .Contact-Content {
     background-color: #11ffee00;
     padding: 20px 20px;
@@ -141,58 +154,61 @@ header {
     font-family: var(--general);   
 }
 
+/* Set all appearance and positioning of all contacting methods within the Contact Me section*/
 .Contact-Content a {
     display: flex;
     color: var(--dark);
     text-align: center;
     text-decoration: none;
-    justify-content: flex-end;
     padding: 10px;
     font-size: 30px;
 }
 
+/* Sets all hyperlinks in the Contact Me section to invert colors, so it has a dark rounded background and light text, when you hover over them*/
 .Contact-Content a:hover{
     background-color: var(--dark);
     color: var(--light);
     border-radius: 20px;
 }
 
-#First-Project {
-    height: 200px;
-    width: auto;
-}
-
+/* Makes the webpage responsive to different size screens*/
 @media screen and (max-width: 820px) {
 
-
+    /* Changes the arrangement of the buttons in the nav bar*/
     .nav-bar {
         flex-direction: column;
     }
 
-    .nav-bar h1 {
+ 
+    /* Removes the margins of the header in the nav bar*/ 
+   .nav-bar h1 {
         margin: 0px;
     }
 
+    /* Changes the padding and arrangement of the hyperlinks in the nav bar*/
     .nav-bar a {
         padding: 10px 20px;
         flex-direction: column;
 
     }
 
+    /* Sets the width of the body element to 100% of the screen*/
     body {
         width: 100%;
     }
 
-
+    /* Centers the top icon in the middle of the screen*/
     .image-box {
         width: 100%;
         margin: auto;
     }
 
+    /* Changes the margins of the project card elements*/
     .cardImage {
         margin: 15px 0;
     }
 
+    /* Changes the arrangement of the buttons in the Contact Me section (Only occurs on very thin screens) */
     .Contact-Content a{
         padding: 20px 20px;
         flex-direction: column;
