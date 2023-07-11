@@ -135,18 +135,23 @@ text-decoration: none;
 }
 
 .Contact-Content {
-    font-family:var(--general);
-    font-size: 24px;
-    color: var(--dark);
-    margin-bottom: 15px;
-    padding: 15px;
+     background-color: #11ffee00;
+    padding: 20px 20px;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;  
+    font-family: var(--general);   
 }
 
 .Contact-Content a {
+    display: flex;
+    color: var(--dark);
+    text-align: center;
     text-decoration: none;
+    justify-content: flex-end;
+    padding: 10px;
+    font-size: 30px;
 }
 
 .Contact-Content a:hover{
@@ -177,19 +182,10 @@ text-decoration: none;
 
     }
 
-    .nav-bar a:hover {
-        text-decoration-color: black;
-
-    }
-
     body {
         width: 100%;
     }
 
-    .top-section {
-        flex-wrap: wrap;
-        width: 100%;
-    }
 
     .image-box {
         width: 100%;
@@ -198,5 +194,10 @@ text-decoration: none;
 
     .cardImage {
         margin: 15px 0;
+    }
+
+    .Contact-Content a{
+        padding: 20px 20px;
+        flex-direction: column;
     }
 }
