@@ -87,12 +87,11 @@ h2 {
 
 hr {
     position: relative;
-    top: 20px;
     border: none;
     height: 6px;
     background: var(--dark);
-    width: auto;
-    margin: 50px 0;
+    width: 85%;
+    margin: 0 auto 0 auto;
 }
 
 .my-bio {
@@ -110,32 +109,30 @@ hr {
   }
 
 .card {
-margin: 15px;
-width: 75%;
+    margin: 15px;
+    width: 75%;
 }
 
 .cardImage {
-margin: 15px;
-width: 100%;
-box-shadow: var(--shadow);
-border-radius: 20px;
+    margin: 15px;
+    width: 100%;
+    border-radius: 20px;
 }
 
-
 header {
-text-align: center;
-font-family: var(--general);
-color: var(--highlight);
-font-size: 25px;
-font-weight: bold;
+    text-align: center;
+    font-family: var(--general);
+    color: var(--highlight);
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .card a{
-text-decoration: none;
+    text-decoration: none;
 }
 
 .Contact-Content {
-     background-color: #11ffee00;
+    background-color: #11ffee00;
     padding: 20px 20px;
     display: flex;
     flex-wrap: wrap;
